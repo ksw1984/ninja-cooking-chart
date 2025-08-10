@@ -50,3 +50,22 @@ h2 {
     color: #a7d129;
     margin-top: 20px;
 }
+
+.language-switch {
+  display: block; /* Macht den Button zum Blockelement */
+  margin: 0 auto 40px auto; /* Zentriert horizontal, unten Abstand */
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #a7d129; /* Grün passend zur Header-Row */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.language-switch:hover {
+  background-color: #8cb020; /* Etwas dunkler beim Hover */
+}

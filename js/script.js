@@ -1,139 +1,50 @@
-/**
- * Renders a dynamic HTML table from a structured data array.
- * 
- * Supports:
- *  - Categories with a header row
- *  - Normal rows
- *  - Grouped rows (multiple entries under the same "zutat" with rowspan)
- *  - Tables with 4, 5, or 6 columns
- * 
- * Column layouts:
- *  - 6 columns: zutat, menge, vorbereitung, oel, temperatur, garzeit
- *  - 5 columns: zutat, menge, vorbereitung, oel, garzeit
- *  - 4 columns: zutat, vorbereitung, temperatur, dehydrierzeit
- * 
- * @param {Array} data - Array of category objects. Each category has a `header` and an `items` array.
- * @param {string} tableId - The ID of the target table element (must contain a <tbody>).
- * @param {number} colCount - Number of columns in the table (4, 5, or 6).
- * 
- * Example data structure:
- * [
- *   {
- *     header: "Category Name",
- *     items: [
- *       { zutat: "Item 1", menge: "500 g", vorbereitung: "Keine", oel: "Kein Öl", temperatur: "180°C", garzeit: "10 min" },
- *       {
- *         zutat: "Grouped Item",
- *         gruppe: [
- *           { menge: "500 g", vorbereitung: "Keine", oel: "Kein Öl", temperatur: "180°C", garzeit: "10 min" },
- *           { menge: "1 kg", vorbereitung: "Keine", oel: "Kein Öl", temperatur: "180°C", garzeit: "20 min" }
- *         ]
- *       }
- *     ]
- *   }
- * ]
- */
-function render_table(data, tableId, colCount) {
-  const tbody = document.querySelector(`#${tableId} tbody`);
-  tbody.innerHTML = ""; // clear previous content
+document.addEventListener("DOMContentLoaded", () => {
+  let currentLang = "de";
+  
+  // Function to set headers based on language
+  function setHeaders(headers) {
+    document.getElementById("header_air_fry").textContent = headers.air_fry;
+    document.getElementById("header_max_crisp").textContent = headers.max_crisp;
+    document.getElementById("header_roast").textContent = headers.roast;
+    document.getElementById("header_bake").textContent = headers.bake;
+    document.getElementById("header_dehydration").textContent = headers.dehydration;
+  }
 
-  data.forEach(category => {
-    // Header row
-    const headerRow = document.createElement("tr");
-    headerRow.classList.add("header-row");
-    const headerCell = document.createElement("td");
-    headerCell.colSpan = colCount;
-    headerCell.textContent = category.header;
-    headerRow.appendChild(headerCell);
-    tbody.appendChild(headerRow);
-
-    category.items.forEach(item => {
-      // in case group exists: multiple lines with rowspan for ingredient
-      if (item.gruppe) {
-        item.gruppe.forEach((subItem, index) => {
-          const row = document.createElement("tr");
-
-          // Forst row with ingredient and rowspan
-          if (index === 0) {
-            row.innerHTML = `
-              <td rowspan="${item.gruppe.length}">${item.zutat}</td>
-              ${colCount === 6 ? `
-                <td>${subItem.menge}</td>
-                <td>${subItem.vorbereitung}</td>
-                <td>${subItem.oel}</td>
-                <td>${subItem.temperatur}</td>
-                <td>${subItem.garzeit}</td>
-              ` : colCount === 5 ? `
-                <td>${subItem.menge}</td>
-                <td>${subItem.vorbereitung}</td>
-                <td>${subItem.oel}</td>
-                <td>${subItem.garzeit}</td>
-              ` : `
-                <td>${subItem.vorbereitung}</td>
-                <td>${subItem.temperatur}</td>
-                <td>${subItem.dehydrierzeit}</td>
-              `}
-            `;
-          } else {
-            // additional rows withut ingredient column
-            row.innerHTML = colCount === 6 ? `
-              <td>${subItem.menge}</td>
-              <td>${subItem.vorbereitung}</td>
-              <td>${subItem.oel}</td>
-              <td>${subItem.temperatur}</td>
-              <td>${subItem.garzeit}</td>
-            ` : colCount === 5 ? `
-              <td>${subItem.menge}</td>
-              <td>${subItem.vorbereitung}</td>
-              <td>${subItem.oel}</td>
-              <td>${subItem.garzeit}</td>
-            ` : `
-              <td>${subItem.vorbereitung}</td>
-              <td>${subItem.temperatur}</td>
-              <td>${subItem.dehydrierzeit}</td>
-            `;
-          }
-
-          tbody.appendChild(row);
-        });
-
-      } else {
-        // Standard ingredient entry (without group)
-        const row = document.createElement("tr");
-        if (colCount === 6) {
-          row.innerHTML = `
-            <td>${item.zutat}</td>
-            <td>${item.menge}</td>
-            <td>${item.vorbereitung}</td>
-            <td>${item.oel}</td>
-            <td>${item.temperatur}</td>
-            <td>${item.garzeit}</td>
-          `;
-        } else if (colCount === 5) {
-          row.innerHTML = `
-            <td>${item.zutat}</td>
-            <td>${item.menge}</td>
-            <td>${item.vorbereitung}</td>
-            <td>${item.oel}</td>
-            <td>${item.garzeit}</td>
-          `;
-        } else if (colCount === 4) {
-          row.innerHTML = `
-            <td>${item.zutat}</td>
-            <td>${item.vorbereitung}</td>
-            <td>${item.temperatur}</td>
-            <td>${item.dehydrierzeit}</td>
-          `;
-        }
-        tbody.appendChild(row);
+  // Set the table column headers dynamically for each table
+  function setTableHeaders(headers) {
+    Object.entries(headers).forEach(([tableId, cols]) => {
+      const theadTr = document.querySelector(`#${tableId} thead tr`);
+      if (theadTr) {
+        theadTr.innerHTML = cols.map(col => `<th>${col}</th>`).join("");
       }
     });
-  });
-}
+  }
 
-// Call for cooking charts
-render_table(table_air_fry, "table_air_fry", 6);
-render_table(table_max_crisp, "table_max_crisp", 5);
-render_table(table_roast, "table_roast", 6);
-render_table(table_bake, "table_bake", 6);
-render_table(table_dehydration, "table_dehydration", 4);
+  function loadTables(lang) {
+      const data = lang === "de" ? data_de : data_en;
+
+      // Update headers according to language
+      setHeaders(lang === "de" ? headers_de : headers_en);
+      
+      // Set table headers
+      setTableHeaders(lang === "de" ? tableHeaders_de : tableHeaders_en);
+
+      // Call for cooking charts
+      render_table(data.table_air_fry, "table_air_fry", 6);
+      render_table(data.table_max_crisp, "table_max_crisp", 5);
+      render_table(data.table_roast, "table_roast", 6);
+      render_table(data.table_bake, "table_bake", 6);
+      render_table(data.table_dehydration, "table_dehydration", 4);
+  }
+
+  const langSwitchBtn = document.getElementById("lang-switch");
+
+  langSwitchBtn.addEventListener("click", () => {
+      currentLang = currentLang === "de" ? "en" : "de";
+      langSwitchBtn.textContent = currentLang === "de" ? "Switch to English" : "Zurück zu Deutsch";
+      loadTables(currentLang);
+  });
+
+  // Initial render
+  loadTables(currentLang);
+});
