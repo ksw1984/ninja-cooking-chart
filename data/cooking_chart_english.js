@@ -8,11 +8,11 @@ const headers_en = {
 };
 
 const tableHeaders_en = {
-  table_air_fry: ["INGREDIENT", "AMOUNT", "PREPARATION", "IN OIL", "TEMPERATURE", "COOK TIME"],
-  table_max_crisp: ["INGREDIENT", "AMOUNT", "PREPARATION", "IN OIL", "COOK TIME"],
-  table_roast: ["INGREDIENT", "AMOUNT", "PREPARATION", "IN OIL", "TEMPERATURE", "COOK TIME"],
-  table_bake: ["INGREDIENT", "AMOUNT", "PREPARATION", "IN OIL", "TEMPERATURE", "COOK TIME"],
-  table_dehydration: ["INGREDIENTS", "PREPARATION", "TEMPERATURE", "DEHYDRATION TIME"]
+  table_air_fry: ["INGREDIENT", "AMOUNT", "PREPARATION", "TOSS IN OIL", "TEMP", "COOK TIME"],
+  table_max_crisp: ["INGREDIENT", "AMOUNT", "PREPARATION", "TOSS IN OIL", "COOK TIME"],
+  table_roast: ["INGREDIENT", "AMOUNT", "PREPARATION", "TOSS IN OIL", "TEMP", "COOK TIME"],
+  table_bake: ["INGREDIENT", "AMOUNT", "PREPARATION", "TOSS IN OIL", "TEMP", "COOK TIME"],
+  table_dehydration: ["INGREDIENTS", "PREPARATION", "TEMP", "DEHYDRATION TIME"]
 };
 
 const data_en = {

@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let currentLang = "de";
+  const browserLang = navigator.language || navigator.userLanguage || "en";
+  let currentLang = browserLang.startsWith("de") ? "de" : "en";
+
   
   // Function to set headers based on language
   function setHeaders(headers) {
@@ -38,10 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const langSwitchBtn = document.getElementById("lang-switch");
-
+  langSwitchBtn.textContent = currentLang === "de" ? "Switch to English" : "Wechsel zu Deutsch";
   langSwitchBtn.addEventListener("click", () => {
       currentLang = currentLang === "de" ? "en" : "de";
-      langSwitchBtn.textContent = currentLang === "de" ? "Switch to English" : "Zurück zu Deutsch";
+      langSwitchBtn.textContent = currentLang === "de" ? "Switch to English" : "Wechsel zu Deutsch";
       loadTables(currentLang);
   });
 

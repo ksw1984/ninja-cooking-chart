@@ -46,7 +46,7 @@ const data_de = {
         { ingredient: "Paprika", amount: "4 (600g)", preparation: "Ganz", oil: "Kein Öl", temperature: "200 °C", cook_time: "26-30 min" },
         { ingredient: "Pilze", amount: "300 g", preparation: "Gebürstet, gestielt", oil: "1 EL", temperature: "200 °C", cook_time: "13 min" },
         { ingredient: "Rosenkohl", amount: "1 kg", preparation: "Halbiert, Strunk entfernt", oil: "1 EL", temperature: "200 °C", cook_time: "18-22 min" },
-        { ingredient: "Rote Bete", amount: "6 kleine oder 4 große (ca. 1 kg)", preparation: "Ganz", oil: "Kein Öl", temperature: "200 °C", cook_time: "40-60 min" },
+        { ingredient: "Rote Bete", amount: "6 kleine oder 4 große (ca. 1 kg)", preparation: "Ganz", oil: "Kein Öl", temperature: "200 °C", cook_time: "45-60 min" },
         {
           ingredient: "Süßkartoffeln",
           gruppe: [
