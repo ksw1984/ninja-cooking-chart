@@ -9,58 +9,49 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
   <body>
-		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-    <h2>Kochtabelle für Air Fry</h2>
-    <table id="table_air_fry">
-      <thead>
-        <tr>
-          <th>ZUTAT</th><th>MENGE</th><th>VORBEREITUNG</th><th>IN ÖL SCHWENKEN</th><th>TEMPERATUR</th><th>GARZEIT</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-    <h2>Kochtabelle für Max Crisp</h2>
-    <table id="table_max_crisp">
-      <thead>
-        <tr>
-          <th>ZUTAT</th><th>MENGE</th><th>VORBEREITUNG</th><th>IN ÖL SCHWENKEN</th><th>GARZEIT</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-    <h2>Bratentabelle (Roast)</h2>
-    <table id="table_roast">
-      <thead>
-        <tr>
-          <th>ZUTAT</th><th>MENGE</th><th>VORBEREITUNG</th><th>IN ÖL SCHWENKEN</th><th>TEMPERATUR</th><th>GARZEIT</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>    
-    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-    <h2>Backtabelle (Bake)</h2>
-    <table id="table_bake">
-      <thead>
-        <tr>
-          <th>ZUTAT</th><th>MENGE</th><th>VORBEREITUNG</th><th>IN ÖL SCHWENKEN</th><th>TEMPERATUR</th><th>GARZEIT</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>    
-    <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
-    <h2>Dehydrierungstabelle (Dehydrate)</h2>
-    <table id="table_dehydration">
-      <thead>
-        <tr>
-          <th>ZUTATEN</th><th>VORBEREITUNG</th><th>TEMPERATUR</th><th>DEHYDRIERUNGSZEIT</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <header class="top-bar">
+    <h1 class="site-title">NINJA Air Fryer Max</h1>
+      <div class="version" id="app-version"></div>
+      
+      <button class="language-switch" id="lang-switch">Switch to English</button>
+  </header>
+    <main>
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+      <h2 id="header_air_fry"></h2>
+      <table id="table_air_fry">
+        <thead><tr></tr></thead>
+        <tbody></tbody>
+      </table>
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+      <h2 id="header_max_crisp"></h2>
+      <table id="table_max_crisp">        
+        <thead><tr></tr></thead>
+        <tbody></tbody>
+      </table>
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+      <h2 id="header_roast"></h2>
+      <table id="table_roast">
+        <thead><tr></tr></thead>
+        <tbody></tbody>
+      </table>    
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+      <h2 id="header_bake"></h2>
+      <table id="table_bake">
+        <thead><tr></tr></thead>
+        <tbody></tbody>
+      </table>    
+      <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+      <h2 id="header_dehydration"></h2>
+      <table id="table_dehydration">
+        <thead><tr></tr></thead>
+        <tbody></tbody>
+      </table>
+    </main>
 
-    <script src="js/cooking_chart_german.js"></script>
+    <!-- Scripts -->
+    <script src="data/cooking_chart_german.js"></script>
+    <script src="data/cooking_chart_english.js"></script>
+    <script src="js/render.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
