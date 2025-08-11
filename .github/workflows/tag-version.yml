@@ -1,10 +1,12 @@
-name: Tag Version
+name: Tag Version and Release
 
 on:
   workflow_dispatch:
   push:
     branches:
       - test-tag-version-workflow
+    tags:
+      - 'v*'
 
 permissions:
   contents: write
@@ -30,3 +32,18 @@ jobs:
           git config user.email "actions@github.com"
           git tag v${{ steps.get_version.outputs.version }}
           git push origin v${{ steps.get_version.outputs.version }}
+  
+  create_release:
+    needs: tag
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    steps:
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
