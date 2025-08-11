@@ -24,7 +24,7 @@
  *       { ingredient: "Item 1", amount: "500 g", preparation: "Keine", oil: "Kein Öl", temperature: "180°C", cook_time: "10 min" },
  *       {
  *         ingredient: "Grouped Item",
- *         gruppe: [
+ *         group: [
  *           { amount: "500 g", preparation: "Keine", oil: "Kein Öl", temperature: "180°C", cook_time: "10 min" },
  *           { amount: "1 kg", preparation: "Keine", oil: "Kein Öl", temperature: "180°C", cook_time: "20 min" }
  *         ]
@@ -49,14 +49,14 @@ function render_table(data, tableId, colCount) {
 
     category.items.forEach(item => {
       // in case group exists: multiple lines with rowspan for ingredient
-      if (item.gruppe) {
-        item.gruppe.forEach((subItem, index) => {
+      if (item.group) {
+        item.group.forEach((subItem, index) => {
           const row = document.createElement("tr");
 
           // Forst row with ingredient and rowspan
           if (index === 0) {
             row.innerHTML = `
-              <td rowspan="${item.gruppe.length}">${item.ingredient}</td>
+              <td rowspan="${item.group.length}">${item.ingredient}</td>
               ${colCount === 6 ? `
                 <td>${subItem.amount}</td>
                 <td>${subItem.preparation}</td>

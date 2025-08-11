@@ -20,167 +20,170 @@ const data_en = {
     {
       header: "VEGETABLES",
       items: [
-        { ingredient: "Blumenkohl", amount: "900 g", preparation: "In 2.5 cm große Röschen geschnitten", oil: "2 EL", temperature: "200 °C", cook_time: "20-24 min" },
-        { ingredient: "Brokkoli", amount: "400 g", preparation: "In 2.5 cm große Röschen geschnitten", oil: "1 EL", temperature: "200 °C", cook_time: "13-16 min" },
+        { ingredient: "Aspargus", amount: "250 g", preparation: "Whole, stems trimmed", oil: "2 tsp", temperature: "200 °C", cook_time: "6-8 min" },
+        { ingredient: "Beetroot", amount: "6 small or 4 large (ca. 1 kg)", preparation: "Whole", oil: "None", temperature: "200 °C", cook_time: "45-60 min" },
+        { ingredient: "Paprika", amount: "4 (600g)", preparation: "Whole", oil: "None", temperature: "200 °C", cook_time: "26-30 min" },
+        { ingredient: "Broccoli", amount: "400 g", preparation: "Cut in 2.5 cm florets", oil: "1 Tbsp", temperature: "200 °C", cook_time: "13-16 min" },
+        { ingredient: "Brussel sprouts", amount: "1 kg", preparation: "Cut in half, stem removed", oil: "1 Tbsp", temperature: "200 °C", cook_time: "18-22 min" },
         {
-          ingredient: "Butternusskürbis",
-          gruppe: [
-            { amount: "500 - 750 g", preparation: "In 2.5 cm große Stücke geschnitten", oil: "1 EL", temperature: "200 °C", cook_time: "16-18 min" },
-            { amount: "1 kg", preparation: "In 2.5 cm große Stücke geschnitten", oil: "1 EL", temperature: "200 °C", cook_time: "23-26 min" }
+          ingredient: "Butternut squash",
+          group: [
+            { amount: "500 - 750 g", preparation: "Cut in 2.5 cm pieces", oil: "1 Tbsp", temperature: "200 °C", cook_time: "16-18 min" },
+            { amount: "1 kg", preparation: "Cut in 2.5 cm pieces", oil: "1 Tbsp", temperature: "200 °C", cook_time: "23-26 min" }
           ]
         },
-        { ingredient: "Grüne Bohnen", amount: "400 g", preparation: "Enden abgeschnitten", oil: "1 EL", temperature: "200 °C", cook_time: "12-14 min" },
-        { ingredient: "Grünkohl (für Chips)", amount: "200 g", preparation: "In Stücke geteilt, Strünke entfernt", oil: "Kein Öl", temperature: "150 °C", cook_time: "8-10 min" },
+        { ingredient: "Carrots", amount: "1 kg", preparation: "Peeled, cut in 1.5 cm pieces", oil: "1 Tbsp", temperature: "200 °C", cook_time: "20-24 min" },
+        { ingredient: "Cauliflower", amount: "900 g", preparation: "Cut in 2.5 cm florets", oil: "2 Tbsp", temperature: "200 °C", cook_time: "20-24 min" },
+        { ingredient: "Corn on the cob", amount: "4", preparation: "Whole ears, husks removed", oil: "1 Tbsp", temperature: "200 °C", cook_time: "15-18 min" },
         {
-          ingredient: "Kartoffeln, weiß<br/>z. B. King Edward, Maris Piper oder Russet",
-          gruppe: [
-            { amount: "1 kg", preparation: "In 2.5 cm große Spalten geschnitten", oil: "1 EL", temperature: "200 °C", cook_time: "22-26 min" },
-            { amount: "500 g", preparation: "Handgeschnittene Chips*, dünn", oil: "½-3 EL Pflanzenöl", temperature: "200 °C", cook_time: "16-18 min" },
-            { amount: "500 g", preparation: "Handgeschnittene Chips*, dick", oil: "½-3 EL Pflanzenöl", temperature: "200 °C", cook_time: "23-26 min" },
-            { amount: "500 g", preparation: "In gleichmäßige Stücke schneiden", oil: "2 EL Pflanzenöl", temperature: "200 °C", cook_time: "15-20 min" },
-            { amount: "4 ganze (je 185-250 g)", preparation: "3 x mit der Gabel eingestochen", oil: "1 EL", temperature: "200 °C", cook_time: "30-35 min" }
+          ingredient: "Courgette",
+          group: [
+            { amount: "500 g", preparation: "Cut in quarters lengthwise, then cut in 2.5 cm pieces", oil: "1 Tbsp", temperature: "200 °C", cook_time: "8-10 min" },
+            { amount: "1 kg", preparation: "Cut in quarters lengthwise, then cut in 2.5 cm pieces", oil: "1 Tbsp", temperature: "200 °C", cook_time: "18-20 min" }
           ]
         },
-        { ingredient: "Maiskolben", amount: "4 Kolben", preparation: "Ganze Kolben ohne Hülsen", oil: "1 EL", temperature: "200 °C", cook_time: "15-18 min" },
-        { ingredient: "Möhren", amount: "1 kg", preparation: "Geschält und in 1.5 cm große Stücke geschnitten", oil: "1 EL", temperature: "200 °C", cook_time: "20-24 min" },
-        { ingredient: "Paprika", amount: "4 (600g)", preparation: "Ganz", oil: "Kein Öl", temperature: "200 °C", cook_time: "26-30 min" },
-        { ingredient: "Pilze", amount: "300 g", preparation: "Gebürstet, gestielt", oil: "1 EL", temperature: "200 °C", cook_time: "13 min" },
-        { ingredient: "Rosenkohl", amount: "1 kg", preparation: "Halbiert, Strunk entfernt", oil: "1 EL", temperature: "200 °C", cook_time: "18-22 min" },
-        { ingredient: "Rote Bete", amount: "6 kleine oder 4 große (ca. 1 kg)", preparation: "Ganz", oil: "Kein Öl", temperature: "200 °C", cook_time: "40-60 min" },
+        { ingredient: "Green beans", amount: "400 g", preparation: "Trimmed", oil: "1 Tbsp", temperature: "200 °C", cook_time: "12-14 min" },
+        { ingredient: "Kale (for chips)", amount: "200 g", preparation: "Torn in pieces, stems removed", oil: "None", temperature: "150 °C", cook_time: "8-10 min" },
+        { ingredient: "Mushrooms", amount: "300 g", preparation: "Wiped, cut in quarters", oil: "1 Tbsp", temperature: "200 °C", cook_time: "13 min" },
         {
-          ingredient: "Süßkartoffeln",
-          gruppe: [
-            { amount: "1 kg", preparation: "In 2.5 cm große Stücke geschnitten", oil: "1 EL", temperature: "200 °C", cook_time: "18-20 min" },
-            {  amount: "4 ganze (je 185-250 g)", preparation: "3 x mit der Gabel eingestochen", oil: "Kein Öl", temperature: "200 °C", cook_time: "30-35 min" }
+          ingredient: "Potatoes<br/> King Edward, Maris Piper oder Russet",
+          group: [
+            { amount: "1 kg", preparation: "Cut in 2.5 cm wedges", oil: "1 Tbsp", temperature: "200 °C", cook_time: "22-26 min" },
+            { amount: "500 g", preparation: "handcut chips*, thin", oil: "½-3 Tbsp Pflanzenöl", temperature: "200 °C", cook_time: "16-18 min" },
+            { amount: "500 g", preparation: "handcut chips*, thick", oil: "½-3 Tbsp Pflanzenöl", temperature: "200 °C", cook_time: "23-26 min" },
+            { amount: "500 g", preparation: "Cut in same size pieces", oil: "2 Tbsp Pflanzenöl", temperature: "200 °C", cook_time: "15-20 min" },
+            { amount: "4 whole (185-250 g)", preparation: "Pierced with fork 3 times", oil: "1 Tbsp", temperature: "200 °C", cook_time: "30-35 min" }
           ]
         },
-        { ingredient: "Spargel", amount: "250 g", preparation: "Ganz, Enden der Stangen abgeschnitten", oil: "2 TL", temperature: "200 °C", cook_time: "6-8 min" },
         {
-          ingredient: "Zucchini",
-          gruppe: [
-            { amount: "500 g", preparation: "Der Länge nach geviertelt, dann in 2.5 cm große Stücke geschnitten", oil: "1 EL", temperature: "200 °C", cook_time: "8-10 min" },
-            { amount: "1 kg", preparation: "Der Länge nach geviertelt, dann in 2.5 cm große Stücke geschnitten", oil: "1 EL", temperature: "200 °C", cook_time: "18-20 min" }
+          ingredient: "Potatoes, sweet",
+          group: [
+            { amount: "1 kg", preparation: "Cut in 2.5 cm chunks", oil: "1 Tbsp", temperature: "200 °C", cook_time: "18-20 min" },
+            {  amount: "4 ganze (je 185-250 g)", preparation: "Pierced with fork 3 times", oil: "None", temperature: "200 °C", cook_time: "30-35 min" }
+          ]
+        },
+      ]
+    },
+    {
+      header: "POULTRY",
+      items: [
+        { ingredient: "Chicken breasts", amount: "4 (800 g)", preparation: "Bone in", oil: "Brushed with oil", temperature: "200 °C", cook_time: "20-22 min" },
+        
+        {
+          ingredient: "Chicken thighs",
+          group: [
+            { amount: "1 kg", preparation: "Bone in", oil: "Brushed with oil", temperature: "200 °C", cook_time: "22-28 min" },
+            { amount: "1 kg", preparation: "Boneless, skinless", oil: "Brushed with oil", temperature: "200 °C", cook_time: "20-26 min" }
+          ]
+        },
+        { ingredient: "Chicken wings", amount: "1 kg", preparation: "Drumettes & flats", oil: "1 Tbsp", temperature: "200 °C", cook_time: "22-26 min" },
+      ]
+    },
+    {
+      header: "FISH & SEAFOOD",
+      items: [
+        { ingredient: "Cod filet", amount: "2 Filets (140 g each)", preparation: "None", oil: "Brushed with oil", temperature: "200 °C", cook_time: "7-10 min" },
+        { ingredient: "Fish cakes", amount: "2 (145 g each)", preparation: "None", oil: "hed with oil", temperature: "200 °C", cook_time: "12-15 min" },
+        { ingredient: "Lobster tails", amount: "4", preparation: "Whole", oil: "None", temperature: "190 °C", cook_time: "5-8 min" },
+        { ingredient: "Prawns", amount: "16 large (165 g)", preparation: "Whole, peeled, tails on", oil: "1 Tbsp", temperature: "200 °C", cook_time: "9-11 min" },
+        { ingredient: "Salmon fillets", amount: "4 filets (130 g each)", preparation: "None", oil: "Brushed with oil", temperature: "200 °C", cook_time: "10-13 min" },
+      ]
+    },
+    {
+      header: "BEEF",
+      items: [
+        { ingredient: "Burgers", amount: "4 (120-130 g each)", preparation: "2,5 cm thick", oil: "None", temperature: "190 °C", cook_time: "8-10 min" },
+        { ingredient: "Steaks", amount: "2 (230 g each)", preparation: "Whole", oil: "None", temperature: "200 °C", cook_time: "6-10 min" }
+      ]
+    },
+    {
+      header: "PORK",
+      items: [
+        { ingredient: "Bacon", amount: "4 rashers", preparation: "None", oil: "None", temperature: "200 °C", cook_time: "8-10 min" },
+        { ingredient: "Ham steaks", amount: "1 (225 g)", preparation: "Cut off 2 cm of the rind, turn after 5 minutes", oil: "Brushed with oil", temperature: "190 °C", cook_time: "10-12 min" },
+        {
+          ingredient: "Pork chops",
+          group: [
+            { amount: "2 bone in (250 g each)", preparation: "Bone in", oil: "Brushed with oil", temperature: "190 °C", cook_time: "14-17 min" },
+            { amount: "4 boneless (100g each)", preparation: "Boneless", oil: "Brushed with oil", temperature: "190 °C", cook_time: "14 min" }
+          ]
+        },
+        { ingredient: "Pork filet", amount: "2 (350-500g)", preparation: "Whole", oil: "Brushed with oil", temperature: "190 °C", cook_time: "25-30 min" },
+        {
+          ingredient: "Sausages",
+          group: [
+            { amount: "4-8  (205-410 g)", preparation: "Whole", oil: "None", temperature: "200 °C", cook_time: "8-10 min" }
           ]
         }
       ]
     },
     {
-      header: "GEFLÜGEL",
+      header: "LAMB",
       items: [
-        { ingredient: "Entenbrust", amount: "2 Brüste (400 g)", preparation: "Haut einschneiden, mit der Brust nach unten braten, nach der Hälfte der Garzeit umdrehen", oil: "Kein Öl", temperature: "200 °C", cook_time: "18-22 min" },
-        { ingredient: "Hähnchenbrust", amount: "4 (800 g)", preparation: "Keine", oil: "Mit Öl bestreichen", temperature: "200 °C", cook_time: "20-22 min" },
-        { ingredient: "Hähnchenflügel", amount: "1 kg", preparation: "Keine", oil: "Mit Öl bestreichen", temperature: "200 °C", cook_time: "27-30 min" },
-        {
-          ingredient: "Hähnchenschenkel",
-          gruppe: [
-            { amount: "6 Schenkel (je 125-150 g/750-900 g)", preparation: "Mit Knochen", oil: "Mit Öl bestreichen", temperature: "200 °C", cook_time: "20-26 min" },
-            { amount: "6-8 Schenkel (je 100/600-800 g)", preparation: "Entbeint", oil: "Mit Öl bestreichen", temperature: "200 °C", cook_time: "20-26 min" }
-          ]
-        }
+        { ingredient: "Lamb chops", amount: "4 (340 g)", preparation: "None", oil: "Brushed with oil", temperature: "180 °C", cook_time: "11-12 min" },
+        { ingredient: "Lamb steak", amount: "3 (300 g)", preparation: "None", oil: "Brushed with oil", temperature: "180 °C", cook_time: "12-13 min" }
       ]
     },
     {
-      header: "FISCH UND MEERESFRÜCHTE",
+      header: "FROZEN FOODS",
       items: [
-        { ingredient: "Fischfrikadellen", amount: "2 Frikadellen (je 145 g)", preparation: "Keine", oil: "Mit Öl bestreichen", temperature: "200 °C", cook_time: "12-15 min" },
-        { ingredient: "Garnelen", amount: "16 große (165 g)", preparation: "Ganz, geschält, mit Schwanz", oil: "1 EL", temperature: "200 °C", cook_time: "9-10 min" },
-        { ingredient: "Kabeljaufilets", amount: "2 Filets (280 g)", preparation: "Keine", oil: "Mit Öl bestreichen", temperature: "200 °C", cook_time: "7-10 min" },
-        { ingredient: "Lachsfilets", amount: "4 Filets (520 g)", preparation: "Keine", oil: "Mit Öl bestreichen", temperature: "200 °C", cook_time: "12-14 min" }
+        { ingredient: "Breaded Mushrooms", amount: "300 g", preparation: "None", oil: "None", temperature: "170 °C", cook_time: "18-18 min" },
+        { ingredient: "Chicken Escalopes", amount: "5", preparation: "None", oil: "None", temperature: "200 °C", cook_time: "18-21 min" },
+        { ingredient: "Chicken nuggets", amount: "700 g", preparation: "None", oil: "None", temperature: "200 °C", cook_time: "20-22 min" },
+        { ingredient: "Chicken Kiew", amount: "4 (500 g)", preparation: "None", oil: "None", temperature: "180 °C", cook_time: "15 min" },
+        { ingredient: "Chicken strips", amount: "11 (270 g)", preparation: "None", oil: "None", temperature: "190 °C", cook_time: "8 min" },
+        { ingredient: "Fish fillets (in batter)", amount: "4 (440 g)", preparation: "Turn halfway through cooking time", oil: "None", temperature: "200 °C", cook_time: "16-18 min" },
+        { ingredient: "Fish fillets, Breaded", amount: "4 fillets (440 g)", preparation: "None", oil: "None", temperature: "200 °C", cook_time: "13-15 min" },
+        { ingredient: "Fish Fingers", amount: "10 (280 g)", preparation: "None", oil: "None", temperature: "200 °C", cook_time: "13-15 min" },
+        { ingredient: "Hash Browns", amount: "625", preparation: "None", oil: "None", temperature: "180 °C", cook_time: "20 min" },
+        { ingredient: "Onion rings", amount: "375 g", preparation: "Kein Öl", oil: "Kein Öl", temperature: "180 °C", cook_time: "12 min" },
+        { ingredient: "Roast potatoes", amount: "700 g", preparation: "None", oil: "None", temperature: "190 °C", cook_time: "20 min" },
+        { ingredient: "Sausage Rolls", amount: "24 (400 g)", preparation: "Brushed with egg wash", oil: "Kein Öl", temperature: "200 °C", cook_time: "12-13 min" },
+        { ingredient: "Scampi, breaded", amount: "280 g", preparation: "None", oil: "None", temperature: "180 °C", cook_time: "12 min" },
+        { ingredient: "Stuffing Balls", amount: "12 (310 g)", preparation: "Keine", oil: "Brushed with oil", temperature: "160 °C", cook_time: "18-20 min" },
+        { ingredient: "Tempura prawns", amount: "8 prawns (140 g)", preparation: "Turn halfway through cooking time", oil: "None", temperature: "190 °C", cook_time: "8-9 min" },
+        { ingredient: "Vegan burgers", amount: "4 (265 g)", preparation: "Single layer", oil: "None", temperature: "190 °C", cook_time: "15 min" }
       ]
     },
     {
-      header: "RIND",
+      header: "CHIPS / FRENCH FRIES",
       items: [
-        { ingredient: "Burger", amount: "4 (jeweils 113 g)", preparation: "2,5 cm dick", oil: "Kein Öl", temperature: "190 °C", cook_time: "11-12 min" },
-        { ingredient: "Steaks", amount: "2 Steaks (jeweils 230 g)", preparation: "Ganz", oil: "Mit Öl bestrichen", temperature: "200 °C", cook_time: "8-12 min" }
-      ]
-    },
-    {
-      header: "SCHWEINEFLEISCH",
-      items: [
-        { ingredient: "Bacon (Speck)", amount: "4 Streifen", preparation: "Keine", oil: "Kein Öl", temperature: "200 °C", cook_time: "8-10 min" },
-        { ingredient: "Schinkensteak", amount: "1 (225 g)", preparation: "2 cm von der Rinde abschneiden, nach 5 min wenden", oil: "Mit Öl bestrichen", temperature: "190 °C", cook_time: "10-12 min" },
-        { ingredient: "Schweinefilets", amount: "2 (je 350-500g)", preparation: "Keine", oil: "Mit Öl bestrichen", temperature: "190 °C", cook_time: "25-30 min" },
-        {
-          ingredient: "Schweinekoteletts",
-          gruppe: [
-            { amount: "2 dick geschnittene Koteletts mit Knochen (jeweils 250 g)", preparation: "Keine", oil: "Mit Öl bestrichen", temperature: "190 °C", cook_time: "14-15 min" },
-            { amount: "4 entpbeinte (jeweils 100g)", preparation: "Entbeint", oil: "Mit Öl bestrichen", temperature: "190 °C", cook_time: "14-17min" }
-          ]
-        },
-        {
-          ingredient: "Wurst",
-          gruppe: [
-            { amount: "4 Würste (205 g)", preparation: "Ganz", oil: "Kein Öl", temperature: "200 °C", cook_time: "8 min" },
-            { amount: "8 Würste (410 g)", preparation: "Ganz", oil: "Kein Öl", temperature: "200 °C", cook_time: "10 min" }
-          ]
-        }
-      ]
-    },
-    {
-      header: "LAMM",
-      items: [
-        { ingredient: "Lammkoteletts", amount: "4 (340 g)", preparation: "Keine", oil: "Mit Öl bestrichen", temperature: "180 °C", cook_time: "11-12 min" },
-        { ingredient: "Lammsteak", amount: "3 (300 g)", preparation: "Keine", oil: "Mit Öl bestrichen", temperature: "180 °C", cook_time: "12-13 min" }
-      ]
-    },
-    {
-      header: "TIEFGEFRORENE LEBENSMITTEL",
-      items: [
-        { ingredient: "Fischfilets (im Backteig)", amount: "4 (440 g)", preparation: "Nach halber Garzeit wenden", oil: "Kein Öl", temperature: "200 °C", cook_time: "16-18 min" },
-        { ingredient: "Fischstäbchen", amount: "10 (280 g)", preparation: "Keine", oil: "Kein Öl", temperature: "200 °C", cook_time: "13-15 min" },
-        { ingredient: "Hähnchenstreifen", amount: "11 (270 g)", preparation: "Keine", oil: "Kein Öl", temperature: "190 °C", cook_time: "8 min" },
-        { ingredient: "Hähnchenschnitzel", amount: "5", preparation: "Keine", oil: "Kein Öl", temperature: "200 °C", cook_time: "18-21 min" },
-        { ingredient: "Hähnchennuggets", amount: "1kg (etwa 50 Nuggets)", preparation: "Keine", oil: "Kein Öl", temperature: "200 °C", cook_time: "20-22 min" },
-        { ingredient: "Kartoffelpuffer", amount: "7 (390 g)", preparation: "Einzelne Schicht", oil: "Kein Öl", temperature: "200 °C", cook_time: "15 min" },
-        { ingredient: "Kiewer Kotelett", amount: "4 (500 g)", preparation: "Keine", oil: "Kein Öl", temperature: "180 °C", cook_time: "15 min" },
-        { ingredient: "Panierte Fischfilets", amount: "4 Filets (440 g)", preparation: "Keine", oil: "Kein Öl", temperature: "200 °C", cook_time: "13-15 min" },
-        { ingredient: "Panierte Knoblauch-Pilze", amount: "300 g", preparation: "Keine", oil: "Kein Öl", temperature: "190 °C", cook_time: "10-12 min" },
-        { ingredient: "Panierte Scampi", amount: "280 g", preparation: "Keine", oil: "Kein Öl", temperature: "180 °C", cook_time: "12 min" },
-        { ingredient: "Röstkartoffeln", amount: "700 g", preparation: "Keine", oil: "Kein Öl", temperature: "190 °C", cook_time: "20 min" },
-        { ingredient: "Tempura-Garnelen", amount: "8 Garnelen (140 g)", preparation: "Nach halber Garzeit wenden", oil: "Kein Öl", temperature: "190 °C", cook_time: "8-9 min" },
-        { ingredient: "Vegane Burger", amount: "4 (265 g)", preparation: "Einzelne Schicht", oil: "Kein Öl", temperature: "190 °C", cook_time: "15 min" }
-      ]
-    },
-    {
-      header: "POMMES FRIES",
-      items: [
-        { ingredient: "Handgeschnittene Pommes frites, 1 cm dick", amount: "500 g", preparation: "30 min in Wasser legen, trocken tupfen", oil: "1-3 EL Pflanzenöl", temperature: "200 °C", cook_time: "20-22 min" },
-        { ingredient: "Handgeschnittene Pommes frites, 2 cm dick", amount: "500 g", preparation: "30 min in Wasser legen, trocken tupfen", oil: "1-3 EL Pflanzenöl", temperature: "200 °C", cook_time: "20-22 min" },
-        { ingredient: "Tiefgefrorene Kartoffelecken", amount: "650 g", preparation: "Keine", oil: "Keine", temperature: "190 °C", cook_time: "20 min" }, 
-        { ingredient: "Tiefgefrorene Pommes frites mit Wellenschnitt", amount: "500 g", preparation: "Keine", oil: "Keine", temperature: "210 °C", cook_time: "18-20 min" },
-        { ingredient: "Tiefgefrorene Pommes frites in Spiralenform", amount: "700 g", preparation: "Keine", oil: "Keine", temperature: "210 °C", cook_time: "18-20 min" },
-        { ingredient: "Tiefgefrorene Pommes frites, dünn geschnittene", amount: "500 g", preparation: "Keine", oil: "Keine", temperature: "200 °C", cook_time: "18 min" },
-        { ingredient: "Tiefgefrorene Pommes frites, grob geschnittene", amount: "500 g", preparation: "Keine", oil: "Keine", temperature: "220 °C", cook_time: "20 min" },
-        { ingredient: "Tiefgefrorene Pommes frites mit Schale", amount: "500 g", preparation: "Keine", oil: "Keine", temperature: "200 °C", cook_time: "18-20 min" },
-        { ingredient: "Tiefgefrorene Pommes frites Gastro", amount: "700 g", preparation: "Keine", oil: "Keine", temperature: "220 °C", cook_time: "22 min" },
-        { ingredient: "Tiefgefrorene Pommes frites", amount: "500 g", preparation: "Keine", oil: "Keine", temperature: "180 °C", cook_time: "20-22 min" },
-        { ingredient: "Tiefgefrorene Pommes frites", amount: "1 kg", preparation: "Keine", oil: "Keine", temperature: "190 °C", cook_time: "20-22 min" },
-        { ingredient: "Tiefgefrorene Süßkartoffelpommes", amount: "500 g", preparation: "Keine", oil: "Keine", temperature: "180 °C", cook_time: "22 min" }
+        { ingredient: "Hand-cut French fries, 1 cm thick", amount: "500 g", preparation: "Soak in water for 30 min, pat dry", oil: "1-3 Tbsp oil", temperature: "200 °C", cook_time: "14-18 min" },
+        { ingredient: "Hand-cut French fries, 2 cm thick", amount: "500 g", preparation: "Soak in water for 30 min, pat dry", oil: "1-3 Tbsp oil", temperature: "200 °C", cook_time: "20-22 min" },
+        { ingredient: "Frozen crinkle-cut French fries", amount: "500 g", preparation: "None", oil: "None", temperature: "210 °C", cook_time: "18-20 min" },
+        { ingredient: "Frozen curly fries", amount: "700 g", preparation: "None", oil: "None", temperature: "210 °C", cook_time: "18-20 min" },
+        { ingredient: "Frozen thin-cut French fries", amount: "500 g", preparation: "None", oil: "None", temperature: "200 °C", cook_time: "18 min" },
+        { ingredient: "Frozen thick-cut/chunky French fries", amount: "500 g", preparation: "None", oil: "None", temperature: "220 °C", cook_time: "20 min" },
+        { ingredient: "Frozen skin-on French fries", amount: "500 g", preparation: "None", oil: "None", temperature: "200 °C", cook_time: "18-20 min" },
+        { ingredient: "Frozen gastro French fries", amount: "700 g", preparation: "None", oil: "None", temperature: "220 °C", cook_time: "22 min" },
+        { ingredient: "Frozen French fries", amount: "500 g", preparation: "None", oil: "None", temperature: "180 °C", cook_time: "20-22 min" },
+        { ingredient: "Frozen French fries", amount: "1 kg", preparation: "None", oil: "None", temperature: "190 °C", cook_time: "20-22 min" },
+        { ingredient: "Frozen potato wedges", amount: "650 g", preparation: "None", oil: "None", temperature: "190 °C", cook_time: "20 min" },
+        { ingredient: "Frozen sweet potato fries", amount: "500 g", preparation: "None", oil: "None", temperature: "190 °C", cook_time: "20-22 min" }
       ]
     }
   ],
 
   table_max_crisp: [
     {
-      header: "TIEFGEFRORENE LEBENSMITTEL",
+      header: "FROZEN FOOD",
       items: [
-        { ingredient: "Hähnchennuggets", amount: "24 (350 g)", preparation: "Keine", oil: "Kein Öl", cook_time: "10 min" },
+        { ingredient: "Chicken nuggets", amount: "24 (350 g)", preparation: "None", oil: "None", cook_time: "9 min" },
         {
-          ingredient: "Pommes frites",
-          gruppe: [
-            { amount: "500 g", preparation: "Keine", oil: "Kein Öl", cook_time: "15 min" },
-            { amount: "1 kg", preparation: "Keine", oil: "Kein Öl", cook_time: "25 min" },
+          ingredient: "Chips / French fries",
+          group: [
+            { amount: "500 g", preparation: "None", oil: "None", cook_time: "15 min" },
+            { amount: "1 kg", preparation: "None", oil: "None", cook_time: "25 min" },
           ]
         },
-        { ingredient: "Chicken Dippers", amount: "400 g", preparation: "Keine", oil: "Kein Öl", cook_time: "9-10 min" },
-        { ingredient: "Chicken Wings", amount: "700 g", preparation: "Keine", oil: "Kein Öl", cook_time: "9-10 min" },
-        { ingredient: "Fischstreifen", amount: "275 g", preparation: "Keine", oil: "Kein Öl", cook_time: "10 min" },
-        { ingredient: "Kartoffel-Pops", amount: "500 g", preparation: "Keine", oil: "Kein Öl", cook_time: "12 min" },
-        { ingredient: "Mozzarella-Sticks", amount: "700 g", preparation: "Keine", oil: "Kein Öl", cook_time: "7-8 min" },
-        { ingredient: "Popcorn-Hähnchen", amount: "500 g", preparation: "Keine", oil: "Kein Öl", cook_time: "12 min" },
-        { ingredient: "Pommes frites (Waffelförmige)", amount: "550 g", preparation: "Keine", oil: "Kein Öl", cook_time: "14-16 min" },
-        { ingredient: "Zwiebelringe (Panniert)", amount: "300 g", preparation: "Keine", oil: "Kein Öl", cook_time: "9-10 min" },
+        { ingredient: "Chicken dippers", amount: "400 g", preparation: "None", oil: "None", cook_time: "9-10 min" },
+        { ingredient: "Chicken wings", amount: "700 g", preparation: "None", oil: "1 Tbsp", cook_time: "25 min" },
+        { ingredient: "Fish sticks", amount: "275 g", preparation: "None", oil: "None", cook_time: "10 min" },
+        { ingredient: "Potato puffs", amount: "500 g", preparation: "None", oil: "None", cook_time: "12 min" },
+        { ingredient: "Mozzarella sticks", amount: "700 g", preparation: "None", oil: "None", cook_time: "6-8 min" },
+        { ingredient: "Popcorn chicken", amount: "500 g", preparation: "None", oil: "None", cook_time: "12 min" },
+        { ingredient: "Waffle-cut fries", amount: "550 g", preparation: "None", oil: "None", cook_time: "14-16 min" },
+        { ingredient: "Battered onion rings", amount: "300 g", preparation: "None", oil: "None", cook_time: "9-10 min" },
       ]
   
     }
@@ -188,50 +191,55 @@ const data_en = {
 
   table_roast: [
     {
-      header: "BRATENTABELLE",
+      header: "VEGETABLES",
       items: [
-        { ingredient: "Aubergine, gefüllt mit Mozarella", amount: "2 kleine Auberginen (500-600 g)", preparation: "Stiel entfernt, der Länge nach halbiert, nach Rezept", oil: "Mit Öl bestreichen", temperature: "190 °C", cook_time: "20+10 min" },
-        { ingredient: "Hähnchen, ganz", amount: "1.38 kg", preparation: "Keulen zusammenbinden", oil: "Mit Öl bestreichen", temperature: "170 °C", cook_time: "50 min" },
-        { ingredient: "Kartoffeln, gebacken", amount: "1 kg", preparation: "Halbiert, oder geviertelt wenn groß", oil: "Mit Öl bestreichen", temperature: "180 °C", cook_time: "30 min" },
-        { ingredient: "Rindfleisch, oberes Rumpsteak", amount: "750 g", preparation: "Keine", oil: "Mit Öl bestreichen", temperature: "160 °C", cook_time: "45-50 min (mittel)" },
-        { ingredient: "Schweinelende ohne Knochen", amount: "800 g", preparation: "Keine", oil: "Fett einschneiden", temperature: "180 °C", cook_time: "60 min" }
+        { ingredient: "Eggplant stuffed with mozzarella", amount: "2 small eggplants (500-600 g)", preparation: "Stem removed, halved lengthwise, prepared according to recipe", oil: "Brush with oil", temperature: "190 °C", cook_time: "20+10 min" },
+        { ingredient: "Baked potatoes", amount: "1 kg", preparation: "Halved, or quartered if large", oil: "Brush with oil", temperature: "180 °C", cook_time: "30 min" },        
+      ]
+    },
+    {
+      header: "MEAT",
+      items: [        
+        { ingredient: "Whole chicken", amount: "1.38 kg", preparation: "Tie legs together", oil: "Brush with oil", temperature: "170 °C", cook_time: "50 min" },
+        { ingredient: "Beef top rump steak", amount: "750 g", preparation: "None", oil: "Brush with oil", temperature: "160 °C", cook_time: "45-50 min (medium)" },
+        { ingredient: "Boneless pork loin", amount: "800 g", preparation: "None", oil: "Score the fat", temperature: "180 °C", cook_time: "60 min" },
       ]
     }
   ],
 
   table_bake: [
     {
-      header: "BACKTABELLE",
-      items: [
-        { ingredient: "Apfel-Teilchen", amount: "900 g", preparation: "Nach Rezept", oil: "Form fettern und mit Backpapier auslegen", temperature: "180 °C", cook_time: "16 min" },
-        { ingredient: "Bananenkuchen", amount: "900 g", preparation: "Nach Rezept", oil: "Form fettern und mit Backpapier auslegen", temperature: "160 °C", cook_time: "35 min" },
-      ]
+      header: "CAKES & PASTRIES",
+        items: [
+          { ingredient: "Apple pastries", amount: "900 g", preparation: "According to recipe", oil: "Grease the pan and line with baking paper", temperature: "180 °C", cook_time: "16 min" },
+          { ingredient: "Banana cake", amount: "900 g", preparation: "According to recipe", oil: "Grease the pan and line with baking paper", temperature: "160 °C", cook_time: "35 min" }
+        ]
     }
   ],
 
   table_dehydration: [
     {
-      header: "OBST UND GEMÜSE (Dehydrierung)",
+      header: "FRUITS & VEGETABLES",
       items: [
-        { ingredient: "Ananas", preparation: "Geschält, entkernt, in 3 mm - 1,25 cm dicke Scheiben geschnitten", temperature: "60 °C", dehydrate_time: "6-8 h" },
-        { ingredient: "Äpfel", preparation: "Kerngehäuse entfernt, in 3 mm große Spalten geschnitten, in Zitronensaft getaucht, trocken getupft", temperature: "60 °C", dehydrate_time: "7-8 h" },
-        { ingredient: "Aubergine", preparation: "Geschält, in 3 mm dicke Scheiben geschnitten, blanchiert", temperature: "60 °C", dehydrate_time: "6-8 h" },
-        { ingredient: "Bananen", preparation: "Geschält, in 3 mm dicke Scheiben geschnitten", temperature: "60 °C", dehydrate_time: "8-10 h" },
-        { ingredient: "Erdbeeren", preparation: "Halbiert oder in 1,25 cm dicke Scheiben geschnitten", temperature: "60 °C", dehydrate_time: "6-8 h" },
-        { ingredient: "Frische Kräuter", preparation: "Gewaschen, trocken getupft, Stiele entfernt", temperature: "60 °C", dehydrate_time: "4 h" },
-        { ingredient: "Ingwerwurzel", preparation: "In 3 mm dicke Scheiben geschnitten", temperature: "60 °C", dehydrate_time: "6 h" },
-        { ingredient: "Mango", preparation: "Geschält, in 3 mm dicke Scheiben geschnitten, Kern entfernt", temperature: "60 °C", dehydrate_time: "6-8 h" },
-        { ingredient: "Pilze", preparation: "Mit weicher Bürste gereinigt (nicht waschen)", temperature: "60 °C", dehydrate_time: "6-8 h" },
-        { ingredient: "Rote Bete", preparation: "Geschält, in 3 mm dicke Scheiben geschnitten", temperature: "60 °C", dehydrate_time: "6-8 h" },
-        { ingredient: "Spargel", preparation: "In 2,5 cm große Stücke geschnitten, blanchiert", temperature: "60 °C", dehydrate_time: "6-8 h" },
-        { ingredient: "Tomaten", preparation: "In 3 mm dicke Scheiben geschnitten oder gerieben; dämpfen, wenn Sie sie dehydrieren wollen", temperature: "60 °C", dehydrate_time: "6-8 h" }
+        { ingredient: "Apples", preparation: "Core removed, cut in 3 mm slices, rinsed in lemon water, patted dry", temperature: "60 °C", dehydrate_time: "7-8 h" },
+        { ingredient: "Asparagus", preparation: "Cut into 2.5 cm pieces, blanched", temperature: "60 °C", dehydrate_time: "6-8 h" },
+        { ingredient: "Bananas", preparation: "Peeled, cut in 3 mm slices", temperature: "60 °C", dehydrate_time: "8-10 h" },
+        { ingredient: "Beetroot", preparation: "Peeled, cut in 3 mm slices", temperature: "60 °C", dehydrate_time: "6-8 h" },
+        { ingredient: "Eggplant / Aubergine", preparation: "Peeled, cut in 3 mm slices, blanched", temperature: "60 °C", dehydrate_time: "6-8 h" },
+        { ingredient: "Fresh herbs", preparation: "Rinsed, patted dry, stems removed", temperature: "60 °C", dehydrate_time: "4 h" },
+        { ingredient: "Ginger root", preparation: "Cut in 3 mm slices", temperature: "60 °C", dehydrate_time: "6 h" },
+        { ingredient: "Mangoes", preparation: "Peeled, cut in 3 mm slices, pit removed", temperature: "60 °C", dehydrate_time: "6-8 h" },
+        { ingredient: "Mushrooms", preparation: "Cleaned with soft brush (do not wash)", temperature: "60 °C", dehydrate_time: "6-8 h" },
+        { ingredient: "Pineapple", preparation: "Peeled, cored, cut in 3 mm - 1.25 cm slices", temperature: "60 °C", dehydrate_time: "6-8 h" },
+        { ingredient: "Strawberries", preparation: "Cut in half or in 1.25 cm slices", temperature: "60 °C", dehydrate_time: "6-8 h" },
+        { ingredient: "Tomatoes", preparation: "Cut in 3 mm slices or grated; steam if planning to rehydrate", temperature: "60 °C", dehydrate_time: "6-8 h" },
       ]
     },
     {
-      header: "FLEISCH, GEFLÜGEL, FISCH (Dehydrierung)",
+      header: "MEAT, POULTRY, FISH",
       items: [
-        { ingredient: "Beef, Chicken, Turkey Jerky (Rind, Hähnchen, Puten-Trockenfleisch)", preparation: "In 6 mm dicke Scheiben geschnitten, über Nacht mariniert", temperature: "70 °C", dehydrate_time: "5-7 h" },
-        { ingredient: "Salmon Jerky (Lachs-Trockenfleisch)", preparation: "In 6 mm dicke Scheiben geschnitten, über Nacht mariniert", temperature: "70 °C", dehydrate_time: "3-5 h" }
+        { ingredient: "Beef, Chicken, Turkey Jerky", preparation: "Cut in 6 mm slices, marinated overnight", temperature: "70 °C", dehydrate_time: "5-7 h" },
+        { ingredient: "Salmon Jerky", preparation: "Cut in 6 mm slices, marinated overnight", temperature: "70 °C", dehydrate_time: "3-5 h" }
       ]
     }
   ]
