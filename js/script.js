@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadTables(currentLang);
 });
 
+// load version from file
 fetch('version.json')
   .then(response => response.json())
   .then(data => {
