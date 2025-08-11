@@ -50,3 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial render
   loadTables(currentLang);
 });
+
+fetch('version.json')
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById('app-version').textContent = `v${data.version}`;
+  })
+  .catch(err => console.error('Error loading version:', err));

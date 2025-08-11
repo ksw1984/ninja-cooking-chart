@@ -51,21 +51,45 @@ h2 {
     margin-top: 20px;
 }
 
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.version {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
 .language-switch {
-  display: block; /* Macht den Button zum Blockelement */
-  margin: 0 auto 40px auto; /* Zentriert horizontal, unten Abstand */
-  padding: 10px 25px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #a7d129; /* Grün passend zur Header-Row */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease;
+    position: absolute; /* position it relative to .top-bar */
+    left: 50%;
+    transform: translateX(-50%); /* perfectly center horizontally */
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #a7d129;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
 }
 
 .language-switch:hover {
-  background-color: #8cb020; /* Etwas dunkler beim Hover */
+    background-color: #8cb020;
 }
