@@ -6,12 +6,17 @@ on:
     branches:
       - test-tag-version-workflow
 
+permissions:
+  contents: write
+
 jobs:
   tag:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Important for tagging, ensures full git history
 
       - name: Read version
         id: get_version
